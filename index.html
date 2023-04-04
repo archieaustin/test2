@@ -10154,10 +10154,11 @@ hammertime.on('pinch pan', function(event) {
 
   // Apply transformations
   var transform =
-    'translate3d(' + posX + 'px,' + posY + 'px, 0) ' +
+    'translate(' + posX + 'px,' + posY + 'px) ' +
     'scale(' + currentScale + ', ' + currentScale + ')';
   zoomableElement.style.transform = transform;
 });
+
 
 // instance.on('panstart', function(e) {
 //   console.log('Fired when pan is just started ', e);
