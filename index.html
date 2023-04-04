@@ -10138,19 +10138,23 @@ hammertime.get('pinch').set({ enable: true });
 hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 
 hammertime.on('pinch pan', function(event) {
-  // Pinch handling
-  if (event.type === 'pinchstart') {
-    lastScale = currentScale;
+  if (event.type === 'pinch') {
+    console.log('Pinch detected');
+    // Pinch handling
+    if (event.type === 'pinchstart') {
+      lastScale = currentScale;
+    }
+    currentScale = Math.max(1, Math.min(lastScale * event.scale, 4));
+  } else if (event.type === 'pan') {
+    console.log('Pan detected');
+    // Pan handling
+    if (event.type === 'panstart') {
+      lastPosX = posX;
+      lastPosY = posY;
+    }
+    posX = Math.min(0, Math.max(lastPosX + event.deltaX / currentScale, maxPosX));
+    posY = Math.min(0, Math.max(lastPosY + event.deltaY / currentScale, maxPosY));
   }
-  currentScale = Math.max(1, Math.min(lastScale * event.scale, 4));
-
-  // Pan handling
-  if (event.type === 'panstart') {
-    lastPosX = posX;
-    lastPosY = posY;
-  }
-  posX = Math.min(0, Math.max(lastPosX + event.deltaX / currentScale, maxPosX));
-  posY = Math.min(0, Math.max(lastPosY + event.deltaY / currentScale, maxPosY));
 
   // Apply transformations
   var transform =
@@ -10158,6 +10162,7 @@ hammertime.on('pinch pan', function(event) {
     'scale(' + currentScale + ', ' + currentScale + ')';
   zoomableElement.style.transform = transform;
 });
+
 
 
 // instance.on('panstart', function(e) {
