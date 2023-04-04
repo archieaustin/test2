@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+<html>
+<head>
+	<title>SVG Example</title>
+	<style>
+		#topsvg-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			border: 1px solid black;
+			box-sizing: border-box;
+			overflow: hidden;
 
-<script  src="script.js"></script>
-    <title>Kinome Tree</title>
-  </head>
-  <body>
-    <div class="kinometree"style="height: 350px; overflow: hidden;" >
-      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   id="svg14533"
+		}
+
+		/*#bottomsvg-container {
+			position: fixed	;
+			width: 100%;
+			height: 19vh;
+			border: 1px solid black;
+			bottom: 0;
+			box-sizing: border-box;
+			padding-bottom: 100px;
+			overflow: hidden;
+		}*/
+		/*.links{
+			pointer-events: auto;
+		}*/
+	</style>
+</head>
+<body>
+	<div id="topsvg-container">
+		<svg id="top-svg" 
+
+ 
    viewbox="200 0 1500 1000"
    width="840"
    height="590"
@@ -2680,50 +2700,29 @@
   <g
      id="LABELS"
      transform="translate(0,-20)">
+    <a class="link" xlink:href="http://www.uniprot.org/uniprot/Q2M2I8"
+   target="_blank" id="a12936" style="pointer-events: visiblePainted;">
+  <text id="t_x5F_AAK1" x="346.81119" y="368.33859"
+        font-weight="700" font-size="4px" fill="#000000"
+        font-family="Helvetica" letter-spacing="0.035">AAK1</text>
+</a>
+<a class="link" xlink:href="http://www.uniprot.org/uniprot/P00519"
+   target="_blank" id="a12939" style="pointer-events: visiblePainted;">
+  <text id="t_x5F_ABL1" x="271.5105" y="179.8826"
+        font-weight="700" font-size="4px" fill="#000000"
+        font-family="Helvetica" letter-spacing="0.035">Abl</text>
+</a>
+<a class="link" xlink:href="http://www.uniprot.org/uniprot/P42684"
+   target="_blank" id="a12942" style="pointer-events: visiblePainted;">
+  <text id="t_x5F_ABL2" x="269.2045" y="175.30991"
+        font-weight="700" font-size="4px" fill="#000000"
+        font-family="Helvetica" letter-spacing="0.035">Arg</text>
+</a>
+
+
+
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q2M2I8"
-       target="_blank"
-       id="a12936">
-      <text
-         id="t_x5F_AAK1"
-         x="346.81119"
-         y="368.33859"
-         font-weight="700"
-         font-size="4px"
-         fill="#000000"
-         font-family="Helvetica"
-         letter-spacing="0.035">AAK1</text>
-    </a>
-    <a
-       xlink:href="http://www.uniprot.org/uniprot/P00519"
-       target="_blank"
-       id="a12939">
-      <text
-         id="t_x5F_ABL1"
-         x="271.5105"
-         y="179.8826"
-         font-weight="700"
-         font-size="4px"
-         fill="#000000"
-         font-family="Helvetica"
-         letter-spacing="0.035">Abl</text>
-    </a>
-    <a
-       xlink:href="http://www.uniprot.org/uniprot/P42684"
-       target="_blank"
-       id="a12942">
-      <text
-         id="t_x5F_ABL2"
-         x="269.2045"
-         y="175.30991"
-         font-weight="700"
-         font-size="4px"
-         fill="#000000"
-         font-family="Helvetica"
-         letter-spacing="0.035">Arg</text>
-    </a>
-    <a
-       xlink:href="http://www.uniprot.org/uniprot/Q07912"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q07912"
        target="_blank"
        id="a12945">
       <text
@@ -2737,7 +2736,7 @@
          letter-spacing="0.035">Ack</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P27037"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P27037"
        target="_blank"
        id="a12948">
       <text
@@ -2751,7 +2750,7 @@
          letter-spacing="0.035">ACtR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13705"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13705"
        target="_blank"
        id="a12951">
       <text
@@ -2765,7 +2764,7 @@
          letter-spacing="0.035">ACtR2B</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q86TW2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q86TW2"
        target="_blank"
        id="a12954">
       <text
@@ -2779,7 +2778,7 @@
          letter-spacing="0.035">ADCK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q7Z695"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q7Z695"
        target="_blank"
        id="a12957">
       <text
@@ -2793,7 +2792,7 @@
          letter-spacing="0.035">ADCK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8NI60"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8NI60"
        target="_blank"
        id="a12960">
       <text
@@ -2807,7 +2806,7 @@
          letter-spacing="0.035">ADCK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96D53"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96D53"
        target="_blank"
        id="a12963">
       <text
@@ -2821,7 +2820,7 @@
          letter-spacing="0.035">ADCK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q3MIX3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q3MIX3"
        target="_blank"
        id="a12966">
       <text
@@ -2835,7 +2834,7 @@
          letter-spacing="0.035">ADCK5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P31749"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P31749"
        target="_blank"
        id="a12969">
       <text
@@ -2849,7 +2848,7 @@
          letter-spacing="0.035">Akt1/PKBα</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P31751"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P31751"
        target="_blank"
        id="a12972">
       <text
@@ -2863,7 +2862,7 @@
          letter-spacing="0.035">Akt2/PKBβ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y243"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y243"
        target="_blank"
        id="a12975">
       <text
@@ -2877,7 +2876,7 @@
          letter-spacing="0.035">Akt3/PKBγ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UM73"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UM73"
        target="_blank"
        id="a12978">
       <text
@@ -2891,7 +2890,7 @@
          letter-spacing="0.035">ALK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P37023"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P37023"
        target="_blank"
        id="a12981">
       <text
@@ -2905,7 +2904,7 @@
          letter-spacing="0.035">ALK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q04771"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q04771"
        target="_blank"
        id="a12984">
       <text
@@ -2919,7 +2918,7 @@
          letter-spacing="0.035">ALK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P36896"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P36896"
        target="_blank"
        id="a12987">
       <text
@@ -2933,7 +2932,7 @@
          letter-spacing="0.035">ALK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8NER5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8NER5"
        target="_blank"
        id="a12990">
       <text
@@ -2947,7 +2946,7 @@
          letter-spacing="0.035">ALK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96L96"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96L96"
        target="_blank"
        id="a12993">
       <text
@@ -2961,7 +2960,7 @@
          letter-spacing="0.035">AlphaK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q86TB3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q86TB3"
        target="_blank"
        id="a12996">
       <text
@@ -2975,7 +2974,7 @@
          letter-spacing="0.035">AlphaK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96QP1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96QP1"
        target="_blank"
        id="a12999">
       <text
@@ -2989,7 +2988,7 @@
          letter-spacing="0.035">AlphaK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13131"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13131"
        target="_blank"
        id="a13002">
       <text
@@ -3003,7 +3002,7 @@
          letter-spacing="0.035">AMPKα1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54646"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54646"
        target="_blank"
        id="a13005">
       <text
@@ -3017,7 +3016,7 @@
          letter-spacing="0.035">AMPKα2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P57078"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P57078"
        target="_blank"
        id="a13008">
       <text
@@ -3031,7 +3030,7 @@
          letter-spacing="0.035">ANKRD3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P16066"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P16066"
        target="_blank"
        id="a13011">
       <text
@@ -3045,7 +3044,7 @@
          letter-spacing="0.035">ANPα</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P20594"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P20594"
        target="_blank"
        id="a13014">
       <text
@@ -3059,7 +3058,7 @@
          letter-spacing="0.035">ANPβ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P10398"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P10398"
        target="_blank"
        id="a13017">
       <text
@@ -3073,7 +3072,7 @@
          letter-spacing="0.035">ARAF</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13315"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13315"
        target="_blank"
        id="a13020">
       <text
@@ -3087,7 +3086,7 @@
          letter-spacing="0.035">ATM</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13535"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13535"
        target="_blank"
        id="a13023">
       <text
@@ -3101,7 +3100,7 @@
          letter-spacing="0.035">ATR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14965"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14965"
        target="_blank"
        id="a13026">
       <text
@@ -3115,7 +3114,7 @@
          letter-spacing="0.035">AurA/Aur2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96GD4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96GD4"
        target="_blank"
        id="a13029">
       <text
@@ -3129,7 +3128,7 @@
          letter-spacing="0.035">AurB/Aur1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UQB9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UQB9"
        target="_blank"
        id="a13032">
       <text
@@ -3143,7 +3142,7 @@
          letter-spacing="0.035">AurC/Aur3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P30530"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P30530"
        target="_blank"
        id="a13035">
       <text
@@ -3157,7 +3156,7 @@
          letter-spacing="0.035">Axl</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P25098"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P25098"
        target="_blank"
        id="a13038">
       <text
@@ -3171,7 +3170,7 @@
          letter-spacing="0.035">BARK1/GRK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P35626"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P35626"
        target="_blank"
        id="a13041">
       <text
@@ -3185,7 +3184,7 @@
          letter-spacing="0.035">BARK2/GRK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14874"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14874"
        target="_blank"
        id="a13044">
       <text
@@ -3199,7 +3198,7 @@
          letter-spacing="0.035">BCKDK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NSY1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NSY1"
        target="_blank"
        id="a13047">
       <text
@@ -3213,7 +3212,7 @@
          letter-spacing="0.035">BIKE</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P51451"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P51451"
        target="_blank"
        id="a13050">
       <text
@@ -3227,7 +3226,7 @@
          letter-spacing="0.035">BLK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P36894"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P36894"
        target="_blank"
        id="a13053">
       <text
@@ -3241,7 +3240,7 @@
          letter-spacing="0.035">BMPR1A</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O00238"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O00238"
        target="_blank"
        id="a13056">
       <text
@@ -3255,7 +3254,7 @@
          letter-spacing="0.035">BMPR1B</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13873"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13873"
        target="_blank"
        id="a13059">
       <text
@@ -3269,7 +3268,7 @@
          letter-spacing="0.035">BMPR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P51813"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P51813"
        target="_blank"
        id="a13062">
       <text
@@ -3283,7 +3282,7 @@
          letter-spacing="0.035">Etk/BMX</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P15056"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P15056"
        target="_blank"
        id="a13065">
       <text
@@ -3297,7 +3296,7 @@
          letter-spacing="0.035">BRAF</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P25440"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P25440"
        target="_blank"
        id="a13068">
       <text
@@ -3311,7 +3310,7 @@
          letter-spacing="0.035">Brd2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q15059"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q15059"
        target="_blank"
        id="a13071">
       <text
@@ -3325,7 +3324,7 @@
          letter-spacing="0.035">Brd3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O60885"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O60885"
        target="_blank"
        id="a13074">
       <text
@@ -3339,7 +3338,7 @@
          letter-spacing="0.035">Brd4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q58F21"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q58F21"
        target="_blank"
        id="a13077">
       <text
@@ -3353,7 +3352,7 @@
          letter-spacing="0.035">BrdT</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13882"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13882"
        target="_blank"
        id="a13080">
       <text
@@ -3367,7 +3366,7 @@
          letter-spacing="0.035">Brk</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8TDC3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8TDC3"
        target="_blank"
        id="a13083">
       <text
@@ -3381,7 +3380,7 @@
          letter-spacing="0.035">BRSK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IWQ3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IWQ3"
        target="_blank"
        id="a13086">
       <text
@@ -3395,7 +3394,7 @@
          letter-spacing="0.035">BRSK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q06187"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q06187"
        target="_blank"
        id="a13089">
       <text
@@ -3409,7 +3408,7 @@
          letter-spacing="0.035">BTK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O43683"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O43683"
        target="_blank"
        id="a13092">
       <text
@@ -3423,7 +3422,7 @@
          letter-spacing="0.035">Bub1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O60566"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O60566"
        target="_blank"
        id="a13095">
       <text
@@ -3437,7 +3436,7 @@
          letter-spacing="0.035">BubR1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q14012"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q14012"
        target="_blank"
        id="a13098">
       <text
@@ -3451,7 +3450,7 @@
          letter-spacing="0.035">CaMK1α</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6P2M8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6P2M8"
        target="_blank"
        id="a13101">
       <text
@@ -3465,7 +3464,7 @@
          letter-spacing="0.035">CaMK1β</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IU85"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IU85"
        target="_blank"
        id="a13104">
       <text
@@ -3479,7 +3478,7 @@
          letter-spacing="0.035">CaMK1δ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96NX5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96NX5"
        target="_blank"
        id="a13107">
       <text
@@ -3493,7 +3492,7 @@
          letter-spacing="0.035">CaMK1γ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UQM7"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UQM7"
        target="_blank"
        id="a13110">
       <text
@@ -3507,7 +3506,7 @@
          letter-spacing="0.035">CaMK2α</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13554"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13554"
        target="_blank"
        id="a13113">
       <text
@@ -3521,7 +3520,7 @@
          letter-spacing="0.035">CaMK2β</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13557"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13557"
        target="_blank"
        id="a13116">
       <text
@@ -3535,7 +3534,7 @@
          letter-spacing="0.035">CaMK2δ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13555"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13555"
        target="_blank"
        id="a13119">
       <text
@@ -3549,7 +3548,7 @@
          letter-spacing="0.035">CaMK2γ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16566"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16566"
        target="_blank"
        id="a13122">
       <text
@@ -3563,7 +3562,7 @@
          letter-spacing="0.035">CaMK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8N5S9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8N5S9"
        target="_blank"
        id="a13125">
       <text
@@ -3577,7 +3576,7 @@
          letter-spacing="0.035">CAMKK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96RR4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96RR4"
        target="_blank"
        id="a13128">
       <text
@@ -3591,7 +3590,7 @@
          letter-spacing="0.035">CAMKK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q32MK0"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q32MK0"
        target="_blank"
        id="a13131">
       <text
@@ -3605,7 +3604,7 @@
          letter-spacing="0.035">caMLCK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14936"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14936"
        target="_blank"
        id="a13134">
       <text
@@ -3619,7 +3618,7 @@
          letter-spacing="0.035">CASK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13308"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13308"
        target="_blank"
        id="a13137">
       <text
@@ -3633,7 +3632,7 @@
          letter-spacing="0.035">CCK4/PTK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IZL9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IZL9"
        target="_blank"
        id="a13140">
       <text
@@ -3647,7 +3646,7 @@
          letter-spacing="0.035">CCRK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P06493"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P06493"
        target="_blank"
        id="a13143">
       <text
@@ -3661,7 +3660,7 @@
          letter-spacing="0.035">CDC2/CDK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O00311"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O00311"
        target="_blank"
        id="a13146">
       <text
@@ -3675,7 +3674,7 @@
          letter-spacing="0.035">CDC7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q15131"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q15131"
        target="_blank"
        id="a13149">
       <text
@@ -3689,7 +3688,7 @@
          letter-spacing="0.035">CDK10</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9BWU1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9BWU1"
        target="_blank"
        id="a13152">
       <text
@@ -3703,7 +3702,7 @@
          letter-spacing="0.035">CDK11</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P24941"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P24941"
        target="_blank"
        id="a13155">
       <text
@@ -3717,7 +3716,7 @@
          letter-spacing="0.035">CDK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q00526"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q00526"
        target="_blank"
        id="a13158">
       <text
@@ -3731,7 +3730,7 @@
          letter-spacing="0.035">CDK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P11802"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P11802"
        target="_blank"
        id="a13161">
       <text
@@ -3745,7 +3744,7 @@
          letter-spacing="0.035">CDK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q00535"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q00535"
        target="_blank"
        id="a13164">
       <text
@@ -3759,7 +3758,7 @@
          letter-spacing="0.035">CDK5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q00534"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q00534"
        target="_blank"
        id="a13167">
       <text
@@ -3773,7 +3772,7 @@
          letter-spacing="0.035">CDK6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P50613"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P50613"
        target="_blank"
        id="a13170">
       <text
@@ -3787,7 +3786,7 @@
          letter-spacing="0.035">CDK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49336"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49336"
        target="_blank"
        id="a13173">
       <text
@@ -3801,7 +3800,7 @@
          letter-spacing="0.035">CDK8</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P50750"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P50750"
        target="_blank"
        id="a13176">
       <text
@@ -3815,7 +3814,7 @@
          letter-spacing="0.035">CDK9</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q00532"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q00532"
        target="_blank"
        id="a13179">
       <text
@@ -3829,7 +3828,7 @@
          letter-spacing="0.035">CDKL1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q92772"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q92772"
        target="_blank"
        id="a13182">
       <text
@@ -3843,7 +3842,7 @@
          letter-spacing="0.035">CDKL2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IVW4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IVW4"
        target="_blank"
        id="a13185">
       <text
@@ -3857,7 +3856,7 @@
          letter-spacing="0.035">CDKL3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q5MAI5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q5MAI5"
        target="_blank"
        id="a13188">
       <text
@@ -3871,7 +3870,7 @@
          letter-spacing="0.035">CDKL4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O76039"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O76039"
        target="_blank"
        id="a13191">
       <text
@@ -3885,7 +3884,7 @@
          letter-spacing="0.035">CDKL5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96QT4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96QT4"
        target="_blank"
        id="a13194">
       <text
@@ -3899,7 +3898,7 @@
          letter-spacing="0.035">Chak1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9BX84"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9BX84"
        target="_blank"
        id="a13197">
       <text
@@ -3913,7 +3912,7 @@
          letter-spacing="0.035">Chak2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q14004"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q14004"
        target="_blank"
        id="a13200">
       <text
@@ -3927,7 +3926,7 @@
          letter-spacing="0.035">CHED</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14757"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14757"
        target="_blank"
        id="a13203">
       <text
@@ -3941,7 +3940,7 @@
          letter-spacing="0.035">CHK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O96017"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O96017"
        target="_blank"
        id="a13206">
       <text
@@ -3955,7 +3954,7 @@
          letter-spacing="0.035">CHK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P48729"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P48729"
        target="_blank"
        id="a13209">
       <text
@@ -3969,7 +3968,7 @@
          letter-spacing="0.035">CK1α</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8N752"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8N752"
        target="_blank"
        id="a13212">
       <text
@@ -3983,7 +3982,7 @@
          letter-spacing="0.035">CK1α2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P48730"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P48730"
        target="_blank"
        id="a13215">
       <text
@@ -3997,7 +3996,7 @@
          letter-spacing="0.035">CK1δ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49674"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49674"
        target="_blank"
        id="a13218">
       <text
@@ -4011,7 +4010,7 @@
          letter-spacing="0.035">CK1ε</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9HCP0"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9HCP0"
        target="_blank"
        id="a13221">
       <text
@@ -4025,7 +4024,7 @@
          letter-spacing="0.035">CK1γ1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P78368"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P78368"
        target="_blank"
        id="a13224">
       <text
@@ -4039,7 +4038,7 @@
          letter-spacing="0.035">CK1γ2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y6M4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y6M4"
        target="_blank"
        id="a13227">
       <text
@@ -4053,7 +4052,7 @@
          letter-spacing="0.035">CK1γ3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P68400"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P68400"
        target="_blank"
        id="a13230">
       <text
@@ -4067,7 +4066,7 @@
          letter-spacing="0.035">CK2α1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P19784"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P19784"
        target="_blank"
        id="a13233">
       <text
@@ -4081,7 +4080,7 @@
          letter-spacing="0.035">CK2α2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8TDR2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8TDR2"
        target="_blank"
        id="a13236">
       <text
@@ -4095,7 +4094,7 @@
          letter-spacing="0.035">CLIK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8N165"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8N165"
        target="_blank"
        id="a13239">
       <text
@@ -4109,7 +4108,7 @@
          letter-spacing="0.035">CLIK1L</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49759"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49759"
        target="_blank"
        id="a13242">
       <text
@@ -4123,7 +4122,7 @@
          letter-spacing="0.035">CLK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49760"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49760"
        target="_blank"
        id="a13245">
       <text
@@ -4137,7 +4136,7 @@
          letter-spacing="0.035">CLK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49761"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49761"
        target="_blank"
        id="a13248">
       <text
@@ -4151,7 +4150,7 @@
          letter-spacing="0.035">CLK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9HAZ1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9HAZ1"
        target="_blank"
        id="a13251">
       <text
@@ -4165,7 +4164,7 @@
          letter-spacing="0.035">CLK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P41279"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P41279"
        target="_blank"
        id="a13254">
       <text
@@ -4179,7 +4178,7 @@
          letter-spacing="0.035">COT</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14578"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14578"
        target="_blank"
        id="a13257">
       <text
@@ -4193,7 +4192,7 @@
          letter-spacing="0.035">CRIK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NYV4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NYV4"
        target="_blank"
        id="a13260">
       <text
@@ -4207,7 +4206,7 @@
          letter-spacing="0.035">CRK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P41240"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P41240"
        target="_blank"
        id="a13263">
       <text
@@ -4221,7 +4220,7 @@
          letter-spacing="0.035">CSK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P42679"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P42679"
        target="_blank"
        id="a13266">
       <text
@@ -4235,7 +4234,7 @@
          letter-spacing="0.035">CTK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q02846"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q02846"
        target="_blank"
        id="a13269">
       <text
@@ -4249,7 +4248,7 @@
          letter-spacing="0.035">CYGD</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P51841"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P51841"
        target="_blank"
        id="a13272">
       <text
@@ -4263,7 +4262,7 @@
          letter-spacing="0.035">CYGF</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P53355"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P53355"
        target="_blank"
        id="a13275">
       <text
@@ -4277,7 +4276,7 @@
          letter-spacing="0.035">DAPK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UIK4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UIK4"
        target="_blank"
        id="a13278">
       <text
@@ -4291,7 +4290,7 @@
          letter-spacing="0.035">DAPK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O43293"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O43293"
        target="_blank"
        id="a13281">
       <text
@@ -4305,7 +4304,7 @@
          letter-spacing="0.035">DAPK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O15075"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O15075"
        target="_blank"
        id="a13284">
       <text
@@ -4319,7 +4318,7 @@
          letter-spacing="0.035">DCAMKL1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8N568"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8N568"
        target="_blank"
        id="a13287">
       <text
@@ -4333,7 +4332,7 @@
          letter-spacing="0.035">DCAMKL2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9C098"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9C098"
        target="_blank"
        id="a13290">
       <text
@@ -4347,7 +4346,7 @@
          letter-spacing="0.035">DCAMKL3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q08345"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q08345"
        target="_blank"
        id="a13293">
       <text
@@ -4361,7 +4360,7 @@
          letter-spacing="0.035">DDR1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16832"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16832"
        target="_blank"
        id="a13296">
       <text
@@ -4375,7 +4374,7 @@
          letter-spacing="0.035">DDR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q12852"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q12852"
        target="_blank"
        id="a13299">
       <text
@@ -4389,7 +4388,7 @@
          letter-spacing="0.035">DLK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q09013"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q09013"
        target="_blank"
        id="a13302">
       <text
@@ -4403,7 +4402,7 @@
          letter-spacing="0.035">DMPK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6DT37"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6DT37"
        target="_blank"
        id="a13305">
       <text
@@ -4417,7 +4416,7 @@
          letter-spacing="0.035">DMPK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P78527"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P78527"
        target="_blank"
        id="a13308">
       <text
@@ -4431,7 +4430,7 @@
          letter-spacing="0.035">DNAPK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UEE5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UEE5"
        target="_blank"
        id="a13311">
       <text
@@ -4445,7 +4444,7 @@
          letter-spacing="0.035">DRAK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O94768"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O94768"
        target="_blank"
        id="a13314">
       <text
@@ -4459,7 +4458,7 @@
          letter-spacing="0.035">DRAK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13627"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13627"
        target="_blank"
        id="a13317">
       <text
@@ -4473,7 +4472,7 @@
          letter-spacing="0.035">DYRK1A</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y463"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y463"
        target="_blank"
        id="a13320">
       <text
@@ -4487,7 +4486,7 @@
          letter-spacing="0.035">DYRK1B</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q92630"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q92630"
        target="_blank"
        id="a13323">
       <text
@@ -4501,7 +4500,7 @@
          letter-spacing="0.035">DYRK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O43781"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O43781"
        target="_blank"
        id="a13326">
       <text
@@ -4515,7 +4514,7 @@
          letter-spacing="0.035">DYRK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NR20"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NR20"
        target="_blank"
        id="a13329">
       <text
@@ -4529,7 +4528,7 @@
          letter-spacing="0.035">DYRK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P00533"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P00533"
        target="_blank"
        id="a13332">
       <text
@@ -4543,7 +4542,7 @@
          letter-spacing="0.035">EGFR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P21709"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P21709"
        target="_blank"
        id="a13335">
       <text
@@ -4557,7 +4556,7 @@
          letter-spacing="0.035">EphA1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q5JZY3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q5JZY3"
        target="_blank"
        id="a13338">
       <text
@@ -4571,7 +4570,7 @@
          letter-spacing="0.035">EphA10</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P29317"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P29317"
        target="_blank"
        id="a13341">
       <text
@@ -4585,7 +4584,7 @@
          letter-spacing="0.035">EphA2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P29320"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P29320"
        target="_blank"
        id="a13344">
       <text
@@ -4599,7 +4598,7 @@
          letter-spacing="0.035">EphA3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54764"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54764"
        target="_blank"
        id="a13347">
       <text
@@ -4613,7 +4612,7 @@
          letter-spacing="0.035">EphA4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54756"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54756"
        target="_blank"
        id="a13350">
       <text
@@ -4627,7 +4626,7 @@
          letter-spacing="0.035">EphA5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UF33"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UF33"
        target="_blank"
        id="a13353">
       <text
@@ -4641,7 +4640,7 @@
          letter-spacing="0.035">EphA6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q15375"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q15375"
        target="_blank"
        id="a13356">
       <text
@@ -4655,7 +4654,7 @@
          letter-spacing="0.035">EphA7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P29322"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P29322"
        target="_blank"
        id="a13359">
       <text
@@ -4669,7 +4668,7 @@
          letter-spacing="0.035">EphA8</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54762"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54762"
        target="_blank"
        id="a13362">
       <text
@@ -4683,7 +4682,7 @@
          letter-spacing="0.035">EphB1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P29323"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P29323"
        target="_blank"
        id="a13365">
       <text
@@ -4697,7 +4696,7 @@
          letter-spacing="0.035">EphB2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54753"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54753"
        target="_blank"
        id="a13368">
       <text
@@ -4711,7 +4710,7 @@
          letter-spacing="0.035">EphB3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P54760"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P54760"
        target="_blank"
        id="a13371">
       <text
@@ -4725,7 +4724,7 @@
          letter-spacing="0.035">EphB4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O15197"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O15197"
        target="_blank"
        id="a13374">
       <text
@@ -4739,7 +4738,7 @@
          letter-spacing="0.035">EphB6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P04626"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P04626"
        target="_blank"
        id="a13377">
       <text
@@ -4753,7 +4752,7 @@
          letter-spacing="0.035">HER2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P21860"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P21860"
        target="_blank"
        id="a13380">
       <text
@@ -4767,7 +4766,7 @@
          letter-spacing="0.035">HER3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q15303"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q15303"
        target="_blank"
        id="a13383">
       <text
@@ -4781,7 +4780,7 @@
          letter-spacing="0.035">HER4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P27361"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P27361"
        target="_blank"
        id="a13386">
       <text
@@ -4795,7 +4794,7 @@
          letter-spacing="0.035">ERK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P28482"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P28482"
        target="_blank"
        id="a13389">
       <text
@@ -4809,7 +4808,7 @@
          letter-spacing="0.035">ERK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16659"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16659"
        target="_blank"
        id="a13392">
       <text
@@ -4823,7 +4822,7 @@
          letter-spacing="0.035">ERK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P31152"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P31152"
        target="_blank"
        id="a13395">
       <text
@@ -4837,7 +4836,7 @@
          letter-spacing="0.035">ERK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13164"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13164"
        target="_blank"
        id="a13398">
       <text
@@ -4851,7 +4850,7 @@
          letter-spacing="0.035">ERK5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8TD08"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8TD08"
        target="_blank"
        id="a13401">
       <text
@@ -4865,7 +4864,7 @@
          letter-spacing="0.035">ERK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q05397"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q05397"
        target="_blank"
        id="a13404">
       <text
@@ -4879,7 +4878,7 @@
          letter-spacing="0.035">FAK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P16591"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P16591"
        target="_blank"
        id="a13407">
       <text
@@ -4893,7 +4892,7 @@
          letter-spacing="0.035">Fer</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P07332"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P07332"
        target="_blank"
        id="a13410">
       <text
@@ -4907,7 +4906,7 @@
          letter-spacing="0.035">Fes</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P11362"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P11362"
        target="_blank"
        id="a13413">
       <text
@@ -4921,7 +4920,7 @@
          letter-spacing="0.035">FGFR1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P21802"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P21802"
        target="_blank"
        id="a13416">
       <text
@@ -4935,7 +4934,7 @@
          letter-spacing="0.035">FGFR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P22607"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P22607"
        target="_blank"
        id="a13419">
       <text
@@ -4949,7 +4948,7 @@
          letter-spacing="0.035">FGFR3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P22455"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P22455"
        target="_blank"
        id="a13422">
       <text
@@ -4963,7 +4962,7 @@
          letter-spacing="0.035">FGFR4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P09769"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P09769"
        target="_blank"
        id="a13425">
       <text
@@ -4977,7 +4976,7 @@
          letter-spacing="0.035">Fgr</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P17948"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P17948"
        target="_blank"
        id="a13428">
       <text
@@ -4991,7 +4990,7 @@
          letter-spacing="0.035">FLT1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P36888"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P36888"
        target="_blank"
        id="a13431">
       <text
@@ -5005,7 +5004,7 @@
          letter-spacing="0.035">FLT3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P35916"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P35916"
        target="_blank"
        id="a13434">
       <text
@@ -5019,7 +5018,7 @@
          letter-spacing="0.035">FLT4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P07333"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P07333"
        target="_blank"
        id="a13437">
       <text
@@ -5033,7 +5032,7 @@
          letter-spacing="0.035">FmS/CSFR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P42345"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P42345"
        target="_blank"
        id="a13440">
       <text
@@ -5047,7 +5046,7 @@
          letter-spacing="0.035">mTOR/FRAP</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P42685"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P42685"
        target="_blank"
        id="a13443">
       <text
@@ -5061,7 +5060,7 @@
          letter-spacing="0.035">FRK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NRP7"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NRP7"
        target="_blank"
        id="a13446">
       <text
@@ -5075,7 +5074,7 @@
          letter-spacing="0.035">Fused</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P06241"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P06241"
        target="_blank"
        id="a13449">
       <text
@@ -5089,7 +5088,7 @@
          letter-spacing="0.035">Fyn</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14976"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14976"
        target="_blank"
        id="a13452">
       <text
@@ -5103,7 +5102,7 @@
          letter-spacing="0.035">GAK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q12851"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q12851"
        target="_blank"
        id="a13455">
       <text
@@ -5117,7 +5116,7 @@
          letter-spacing="0.035">GCK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9P2K8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9P2K8"
        target="_blank"
        id="a13458">
       <text
@@ -5131,7 +5130,7 @@
          letter-spacing="0.035">GCN2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9P2K8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9P2K8"
        target="_blank"
        id="a13461">
       <text
@@ -5145,7 +5144,7 @@
          letter-spacing="0.035">GCN2~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P32298"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P32298"
        target="_blank"
        id="a13464">
       <text
@@ -5159,7 +5158,7 @@
          letter-spacing="0.035">GRK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P34947"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P34947"
        target="_blank"
        id="a13467">
       <text
@@ -5173,7 +5172,7 @@
          letter-spacing="0.035">GRK5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P43250"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P43250"
        target="_blank"
        id="a13470">
       <text
@@ -5187,7 +5186,7 @@
          letter-spacing="0.035">GRK6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8WTQ7"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8WTQ7"
        target="_blank"
        id="a13473">
       <text
@@ -5201,7 +5200,7 @@
          letter-spacing="0.035">GRK7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49840"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49840"
        target="_blank"
        id="a13476">
       <text
@@ -5215,7 +5214,7 @@
          letter-spacing="0.035">GSK3α</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49841"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49841"
        target="_blank"
        id="a13479">
       <text
@@ -5229,7 +5228,7 @@
          letter-spacing="0.035">GSK3β</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8TF76"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8TF76"
        target="_blank"
        id="a13482">
       <text
@@ -5243,7 +5242,7 @@
          letter-spacing="0.035">Haspin</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P08631"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P08631"
        target="_blank"
        id="a13485">
       <text
@@ -5257,7 +5256,7 @@
          letter-spacing="0.035">HCK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O95819"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O95819"
        target="_blank"
        id="a13488">
       <text
@@ -5271,7 +5270,7 @@
          letter-spacing="0.035">HGK/ZC1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q59H18"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q59H18"
        target="_blank"
        id="a13491">
       <text
@@ -5285,7 +5284,7 @@
          letter-spacing="0.035">HH498</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q86Z02"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q86Z02"
        target="_blank"
        id="a13494">
       <text
@@ -5299,7 +5298,7 @@
          letter-spacing="0.035">HIPK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9H2X6"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9H2X6"
        target="_blank"
        id="a13497">
       <text
@@ -5313,7 +5312,7 @@
          letter-spacing="0.035">HIPK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9H422"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9H422"
        target="_blank"
        id="a13500">
       <text
@@ -5327,7 +5326,7 @@
          letter-spacing="0.035">HIPK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8NE63"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8NE63"
        target="_blank"
        id="a13503">
       <text
@@ -5341,7 +5340,7 @@
          letter-spacing="0.035">HIPK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q92918"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q92918"
        target="_blank"
        id="a13506">
       <text
@@ -5355,7 +5354,7 @@
          letter-spacing="0.035">HPK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9BQI3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9BQI3"
        target="_blank"
        id="a13509">
       <text
@@ -5369,7 +5368,7 @@
          letter-spacing="0.035">HRI</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P25092"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P25092"
        target="_blank"
        id="a13512">
       <text
@@ -5383,7 +5382,7 @@
          letter-spacing="0.035">HSER</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P57058"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P57058"
        target="_blank"
        id="a13515">
       <text
@@ -5397,7 +5396,7 @@
          letter-spacing="0.035">HUNK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UPZ9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UPZ9"
        target="_blank"
        id="a13518">
       <text
@@ -5411,7 +5410,7 @@
          letter-spacing="0.035">ICK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P08069"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P08069"
        target="_blank"
        id="a13521">
       <text
@@ -5425,7 +5424,7 @@
          letter-spacing="0.035">IGF1R</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O15111"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O15111"
        target="_blank"
        id="a13524">
       <text
@@ -5439,7 +5438,7 @@
          letter-spacing="0.035">IKKα</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14920"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14920"
        target="_blank"
        id="a13527">
       <text
@@ -5453,7 +5452,7 @@
          letter-spacing="0.035">IKKβ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q14164"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q14164"
        target="_blank"
        id="a13530">
       <text
@@ -5467,7 +5466,7 @@
          letter-spacing="0.035">IKKε</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13418"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13418"
        target="_blank"
        id="a13533">
       <text
@@ -5481,7 +5480,7 @@
          letter-spacing="0.035">ILK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P06213"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P06213"
        target="_blank"
        id="a13536">
       <text
@@ -5495,7 +5494,7 @@
          letter-spacing="0.035">InSR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P51617"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P51617"
        target="_blank"
        id="a13539">
       <text
@@ -5509,7 +5508,7 @@
          letter-spacing="0.035">IRAK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O43187"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O43187"
        target="_blank"
        id="a13542">
       <text
@@ -5523,7 +5522,7 @@
          letter-spacing="0.035">IRAK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y616"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y616"
        target="_blank"
        id="a13545">
       <text
@@ -5537,7 +5536,7 @@
          letter-spacing="0.035">IRAK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NWZ3"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NWZ3"
        target="_blank"
        id="a13548">
       <text
@@ -5551,7 +5550,7 @@
          letter-spacing="0.035">IRAK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75460"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75460"
        target="_blank"
        id="a13551">
       <text
@@ -5565,7 +5564,7 @@
          letter-spacing="0.035">IRE1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q76MJ5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q76MJ5"
        target="_blank"
        id="a13554">
       <text
@@ -5579,7 +5578,7 @@
          letter-spacing="0.035">IRE2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P14616"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P14616"
        target="_blank"
        id="a13557">
       <text
@@ -5593,7 +5592,7 @@
          letter-spacing="0.035">IRR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q08881"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q08881"
        target="_blank"
        id="a13560">
       <text
@@ -5607,7 +5606,7 @@
          letter-spacing="0.035">ITK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P23458"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P23458"
        target="_blank"
        id="a13563">
       <text
@@ -5621,7 +5620,7 @@
          letter-spacing="0.035">JAK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P23458"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P23458"
        target="_blank"
        id="a13566">
       <text
@@ -5635,7 +5634,7 @@
          letter-spacing="0.035">JAK1~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O60674"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O60674"
        target="_blank"
        id="a13569">
       <text
@@ -5649,7 +5648,7 @@
          letter-spacing="0.035">JAK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O60674"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O60674"
        target="_blank"
        id="a13572">
       <text
@@ -5663,7 +5662,7 @@
          letter-spacing="0.035">JAK2~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P52333"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P52333"
        target="_blank"
        id="a13575">
       <text
@@ -5677,7 +5676,7 @@
          letter-spacing="0.035">JAK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P52333"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P52333"
        target="_blank"
        id="a13578">
       <text
@@ -5691,7 +5690,7 @@
          letter-spacing="0.035">JAK3~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P45983"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P45983"
        target="_blank"
        id="a13581">
       <text
@@ -5705,7 +5704,7 @@
          letter-spacing="0.035">JNK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P45984"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P45984"
        target="_blank"
        id="a13584">
       <text
@@ -5719,7 +5718,7 @@
          letter-spacing="0.035">JNK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P53779"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P53779"
        target="_blank"
        id="a13587">
       <text
@@ -5733,7 +5732,7 @@
          letter-spacing="0.035">JNK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P35968"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P35968"
        target="_blank"
        id="a13590">
       <text
@@ -5747,7 +5746,7 @@
          letter-spacing="0.035">KDR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y4K4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y4K4"
        target="_blank"
        id="a13593">
       <text
@@ -5761,7 +5760,7 @@
          letter-spacing="0.035">KHS1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IVH8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IVH8"
        target="_blank"
        id="a13596">
       <text
@@ -5775,7 +5774,7 @@
          letter-spacing="0.035">KHS2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8TAS1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8TAS1"
        target="_blank"
        id="a13599">
       <text
@@ -5789,7 +5788,7 @@
          letter-spacing="0.035">KIS</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P10721"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P10721"
        target="_blank"
        id="a13602">
       <text
@@ -5803,7 +5802,7 @@
          letter-spacing="0.035">Kit</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IVT5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IVT5"
        target="_blank"
        id="a13605">
       <text
@@ -5817,7 +5816,7 @@
          letter-spacing="0.035">KSR</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6VAB6"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6VAB6"
        target="_blank"
        id="a13608">
       <text
@@ -5831,7 +5830,7 @@
          letter-spacing="0.035">KSR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O95835"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O95835"
        target="_blank"
        id="a13611">
       <text
@@ -5845,7 +5844,7 @@
          letter-spacing="0.035">LATS1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9NRM7"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9NRM7"
        target="_blank"
        id="a13614">
       <text
@@ -5859,7 +5858,7 @@
          letter-spacing="0.035">LATS2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P06239"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P06239"
        target="_blank"
        id="a13617">
       <text
@@ -5873,7 +5872,7 @@
          letter-spacing="0.035">Lck</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P53667"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P53667"
        target="_blank"
        id="a13620">
       <text
@@ -5887,7 +5886,7 @@
          letter-spacing="0.035">LIMK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P53671"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P53671"
        target="_blank"
        id="a13623">
       <text
@@ -5901,7 +5900,7 @@
          letter-spacing="0.035">LIMK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q15831"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q15831"
        target="_blank"
        id="a13626">
       <text
@@ -5915,7 +5914,7 @@
          letter-spacing="0.035">Lkb1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6ZMQ8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6ZMQ8"
        target="_blank"
        id="a13629">
       <text
@@ -5929,7 +5928,7 @@
          letter-spacing="0.035">Lmr1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IWU2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IWU2"
        target="_blank"
        id="a13632">
       <text
@@ -5943,7 +5942,7 @@
          letter-spacing="0.035">Lmr2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96Q04"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96Q04"
        target="_blank"
        id="a13635">
       <text
@@ -5957,7 +5956,7 @@
          letter-spacing="0.035">Lmr3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O94804"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O94804"
        target="_blank"
        id="a13638">
       <text
@@ -5971,7 +5970,7 @@
          letter-spacing="0.035">LOK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q38SD2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q38SD2"
        target="_blank"
        id="a13641">
       <text
@@ -5985,7 +5984,7 @@
          letter-spacing="0.035">LRRK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q5S007"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q5S007"
        target="_blank"
        id="a13644">
       <text
@@ -5999,7 +5998,7 @@
          letter-spacing="0.035">LRRK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P29376"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P29376"
        target="_blank"
        id="a13647">
       <text
@@ -6013,7 +6012,7 @@
          letter-spacing="0.035">LTK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P07948"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P07948"
        target="_blank"
        id="a13650">
       <text
@@ -6027,7 +6026,7 @@
          letter-spacing="0.035">Lyn</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O43283"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O43283"
        target="_blank"
        id="a13653">
       <text
@@ -6041,7 +6040,7 @@
          letter-spacing="0.035">LZK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P20794"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P20794"
        target="_blank"
        id="a13656">
       <text
@@ -6055,7 +6054,7 @@
          letter-spacing="0.035">MAK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q02750"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q02750"
        target="_blank"
        id="a13659">
       <text
@@ -6069,7 +6068,7 @@
          letter-spacing="0.035">MEK1/MAP2K1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P36507"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P36507"
        target="_blank"
        id="a13662">
       <text
@@ -6083,7 +6082,7 @@
          letter-spacing="0.035">MEK2/MAP2K2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P46734"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P46734"
        target="_blank"
        id="a13665">
       <text
@@ -6097,7 +6096,7 @@
          letter-spacing="0.035">MKK3/MAP2K3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P45985"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P45985"
        target="_blank"
        id="a13668">
       <text
@@ -6111,7 +6110,7 @@
          letter-spacing="0.035">SEK1/MAP2K4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13163"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13163"
        target="_blank"
        id="a13671">
       <text
@@ -6125,7 +6124,7 @@
          letter-spacing="0.035">MAP2K5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P52564"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P52564"
        target="_blank"
        id="a13674">
       <text
@@ -6139,7 +6138,7 @@
          letter-spacing="0.035">MKK6/MAP2K6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O14733"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O14733"
        target="_blank"
        id="a13677">
       <text
@@ -6153,7 +6152,7 @@
          letter-spacing="0.035">MAP2K7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13233"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13233"
        target="_blank"
        id="a13680">
       <text
@@ -6167,7 +6166,7 @@
          letter-spacing="0.035">MEKK1/MAP3K1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q56UN5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q56UN5"
        target="_blank"
        id="a13683">
       <text
@@ -6181,7 +6180,7 @@
          letter-spacing="0.035">MAP3K8</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y2U5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y2U5"
        target="_blank"
        id="a13686">
       <text
@@ -6195,7 +6194,7 @@
          letter-spacing="0.035">MEKK2/MAP3K2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q99759"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q99759"
        target="_blank"
        id="a13689">
       <text
@@ -6209,7 +6208,7 @@
          letter-spacing="0.035">MEKK3/MAP3K3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y6R4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y6R4"
        target="_blank"
        id="a13692">
       <text
@@ -6223,7 +6222,7 @@
          letter-spacing="0.035">MAP3K4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q99683"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q99683"
        target="_blank"
        id="a13695">
       <text
@@ -6237,7 +6236,7 @@
          letter-spacing="0.035">ASK/MAP3K5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O95382"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O95382"
        target="_blank"
        id="a13698">
       <text
@@ -6251,7 +6250,7 @@
          letter-spacing="0.035">MEKK6/MAP3K6</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6ZN16"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6ZN16"
        target="_blank"
        id="a13701">
       <text
@@ -6265,7 +6264,7 @@
          letter-spacing="0.035">MAP3K7</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P49137"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P49137"
        target="_blank"
        id="a13704">
       <text
@@ -6279,7 +6278,7 @@
          letter-spacing="0.035">MAPKAPK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16644"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16644"
        target="_blank"
        id="a13707">
       <text
@@ -6293,7 +6292,7 @@
          letter-spacing="0.035">MAPKAPK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8IW41"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8IW41"
        target="_blank"
        id="a13710">
       <text
@@ -6307,7 +6306,7 @@
          letter-spacing="0.035">MAPKAPK5</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9P0L2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9P0L2"
        target="_blank"
        id="a13713">
       <text
@@ -6321,7 +6320,7 @@
          letter-spacing="0.035">MARK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q7KZI7"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q7KZI7"
        target="_blank"
        id="a13716">
       <text
@@ -6335,7 +6334,7 @@
          letter-spacing="0.035">MARK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P27448"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P27448"
        target="_blank"
        id="a13719">
       <text
@@ -6349,7 +6348,7 @@
          letter-spacing="0.035">MARK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96L34"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96L34"
        target="_blank"
        id="a13722">
       <text
@@ -6363,7 +6362,7 @@
          letter-spacing="0.035">MARK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y2H9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y2H9"
        target="_blank"
        id="a13725">
       <text
@@ -6377,7 +6376,7 @@
          letter-spacing="0.035">MAST1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q6P0Q8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q6P0Q8"
        target="_blank"
        id="a13728">
       <text
@@ -6391,7 +6390,7 @@
          letter-spacing="0.035">MAST2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O60307"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O60307"
        target="_blank"
        id="a13731">
       <text
@@ -6405,7 +6404,7 @@
          letter-spacing="0.035">MAST3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O15021"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O15021"
        target="_blank"
        id="a13734">
       <text
@@ -6419,7 +6418,7 @@
          letter-spacing="0.035">MAST4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q96GX5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q96GX5"
        target="_blank"
        id="a13737">
       <text
@@ -6433,7 +6432,7 @@
          letter-spacing="0.035">MASTL</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q14680"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q14680"
        target="_blank"
        id="a13740">
       <text
@@ -6447,7 +6446,7 @@
          letter-spacing="0.035">MELK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q12866"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q12866"
        target="_blank"
        id="a13743">
       <text
@@ -6461,7 +6460,7 @@
          letter-spacing="0.035">Mer</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P08581"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P08581"
        target="_blank"
        id="a13746">
       <text
@@ -6475,7 +6474,7 @@
          letter-spacing="0.035">Met</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8N4C8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8N4C8"
        target="_blank"
        id="a13749">
       <text
@@ -6489,7 +6488,7 @@
          letter-spacing="0.035">MINK/ZC3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16671"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16671"
        target="_blank"
        id="a13752">
       <text
@@ -6503,7 +6502,7 @@
          letter-spacing="0.035">MISR2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P80192"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P80192"
        target="_blank"
        id="a13755">
       <text
@@ -6517,7 +6516,7 @@
          letter-spacing="0.035">MLK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q02779"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q02779"
        target="_blank"
        id="a13758">
       <text
@@ -6531,7 +6530,7 @@
          letter-spacing="0.035">MLK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q16584"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q16584"
        target="_blank"
        id="a13761">
       <text
@@ -6545,7 +6544,7 @@
          letter-spacing="0.035">MLK3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q5TCX8"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q5TCX8"
        target="_blank"
        id="a13764">
       <text
@@ -6559,7 +6558,7 @@
          letter-spacing="0.035">MLK4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8NB16"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8NB16"
        target="_blank"
        id="a13767">
       <text
@@ -6573,7 +6572,7 @@
          letter-spacing="0.035">MLKL</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9BUB5"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9BUB5"
        target="_blank"
        id="a13770">
       <text
@@ -6587,7 +6586,7 @@
          letter-spacing="0.035">MNK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9HBH9"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9HBH9"
        target="_blank"
        id="a13773">
       <text
@@ -6601,7 +6600,7 @@
          letter-spacing="0.035">MNK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UQ07"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UQ07"
        target="_blank"
        id="a13776">
       <text
@@ -6615,7 +6614,7 @@
          letter-spacing="0.035">MOK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/P00540"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/P00540"
        target="_blank"
        id="a13779">
       <text
@@ -6629,7 +6628,7 @@
          letter-spacing="0.035">MOS</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75716"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75716"
        target="_blank"
        id="a13782">
       <text
@@ -6643,7 +6642,7 @@
          letter-spacing="0.035">MPSK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q5VT25"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q5VT25"
        target="_blank"
        id="a13785">
       <text
@@ -6657,7 +6656,7 @@
          letter-spacing="0.035">MRCKα</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y5S2"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y5S2"
        target="_blank"
        id="a13788">
       <text
@@ -6671,7 +6670,7 @@
          letter-spacing="0.035">MRCKβ</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75582"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75582"
        target="_blank"
        id="a13791">
       <text
@@ -6685,7 +6684,7 @@
          letter-spacing="0.035">MSK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75582"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75582"
        target="_blank"
        id="a13794">
       <text
@@ -6699,7 +6698,7 @@
          letter-spacing="0.035">MSK1~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75676"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75676"
        target="_blank"
        id="a13797">
       <text
@@ -6713,7 +6712,7 @@
          letter-spacing="0.035">MSK2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O75676"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O75676"
        target="_blank"
        id="a13800">
       <text
@@ -6727,7 +6726,7 @@
          letter-spacing="0.035">MSK2~b</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9UPE1"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9UPE1"
        target="_blank"
        id="a13803">
       <text
@@ -6741,7 +6740,7 @@
          letter-spacing="0.035">MSSK1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13043"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13043"
        target="_blank"
        id="a13806">
       <text
@@ -6755,7 +6754,7 @@
          letter-spacing="0.035">MST1</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q13188"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q13188"
        target="_blank"
        id="a13809">
       <text
@@ -6769,7 +6768,7 @@
          letter-spacing="0.035">MST2</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9Y6E0"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9Y6E0"
        target="_blank"
        id="a13812">
       <text
@@ -6783,7 +6782,7 @@
          letter-spacing="0.035">MST3</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q9P289"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q9P289"
        target="_blank"
        id="a13815">
       <text
@@ -6797,7 +6796,7 @@
          letter-spacing="0.035">MST4</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/O15146"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/O15146"
        target="_blank"
        id="a13818">
       <text
@@ -6811,7 +6810,7 @@
          letter-spacing="0.035">MUSK</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8NEV4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8NEV4"
        target="_blank"
        id="a13821">
       <text
@@ -6825,7 +6824,7 @@
          letter-spacing="0.035">MYO3A</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q8WXR4"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q8WXR4"
        target="_blank"
        id="a13824">
       <text
@@ -6839,7 +6838,7 @@
          letter-spacing="0.035">MYO3B</text>
     </a>
     <a
-       xlink:href="http://www.uniprot.org/uniprot/Q99640"
+       class="link" xlink:href="http://www.uniprot.org/uniprot/Q99640"
        target="_blank"
        id="a13827">
       <text
@@ -10114,240 +10113,47 @@
        id="text14530">TKL</text>
   </g>
 </svg>
-</div>
+		
+	</div>
+	<div id="bottomsvg-container">
+		
+	</div>
+	    <script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
 
 
+	<script>
+var element = document.querySelector('#top-svg')
 
+// and forward it it to panzoom.
+panzoom(element);
 
+var instance = panzoom(element);
+instance.on('panstart', function(e) {
+  console.log('Fired when pan is just started ', e);
+  // Note: e === instance.
+});
 
-<div class = "keyContainer">
+instance.on('pan', function(e) {
+  console.log('Fired when the `element` is being panned', e);
+});
 
-<svg class = "branchkey" viewbox = "0 0 300 300"
-version="1.1"
+instance.on('panend', function(e) {
+  console.log('Fired when pan ended', e);
+});
 
-id="svg1836"
-inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
-sodipodi:docname="branchkey.svg"
-xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-xmlns="http://www.w3.org/2000/svg"
-xmlns:svg="http://www.w3.org/2000/svg">
-<sodipodi:namedview
-  id="namedview1838"
-  pagecolor="#ffffff"
-  bordercolor="#000000"
-  borderopacity="0.25"
-  inkscape:showpageshadow="2"
-  inkscape:pageopacity="0.0"
-  inkscape:pagecheckerboard="0"
-  inkscape:deskcolor="#d1d1d1"
-  inkscape:document-units="mm"
-  showgrid="false"
-  inkscape:zoom="0.66316072"
-  inkscape:cx="573.76739"
-  inkscape:cy="452.37902"
-  inkscape:window-width="1470"
-  inkscape:window-height="920"
-  inkscape:window-x="0"
-  inkscape:window-y="36"
-  inkscape:window-maximized="0"
-  inkscape:current-layer="layer1" />
-<defs
-  id="defs1833" />
-<g
-  inkscape:label="Layer 1"
-  inkscape:groupmode="layer"
-  id="layer1">
- <text
-    x="49.7332"
-    y="36.69836"
-    font-family="Helvetica"
-    font-weight="700"
-    font-size="9px"
-    id="text12366"
-    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.5672px;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">Branch Color</text>
- <rect
-    x="41.437119"
-    y="26.966896"
-    fill="#d3d3d3"
-    width="2.6089087"
-    height="96.752251"
-    id="rect12368"
-    style="stroke-width:0.838192" />
- <rect
-    x="51.949924"
-    y="48.619175"
-    fill="#fa6958"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12370"
-    style="stroke-width:1.12888" />
- <text
-    x="65.629364"
-    y="53.241985"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12372"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">AGC</text>
- <rect
-    x="51.949924"
-    y="64.573463"
-    fill="#3f9ffc"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12374"
-    style="stroke-width:1.12888" />
- <text
-    x="65.629364"
-    y="69.046249"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12376"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">Atypical</text>
- <rect
-    x="51.949924"
-    y="80.527794"
-    fill="#fad53f"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12378"
-    style="stroke-width:1.12888" />
- <text
-    x="65.629364"
-    y="84.850563"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12380"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">CAMK</text>
- <rect
-    x="51.949924"
-    y="96.482109"
-    fill="#b0e6c2"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12382"
-    style="stroke-width:1.12888" />
- <text
-    x="65.629364"
-    y="100.65487"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12384"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">CK1</text>
- <rect
-    x="51.949924"
-    y="112.43639"
-    fill="#b348a1"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12386"
-    style="stroke-width:1.12888" />
- <text
-    x="65.629364"
-    y="116.45919"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12388"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059724,1.009492)">CMGC</text>
- <rect
-    x="129.00058"
-    y="48.781693"
-    fill="#2cd1e0"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12390"
-    style="stroke-width:1.12888" />
- <text
-    x="143.41116"
-    y="53.402935"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12392"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059725,1.009492)">Other</text>
- <rect
-    x="129.00058"
-    y="64.735985"
-    fill="#bec956"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12394"
-    style="stroke-width:1.12888" />
- <text
-    x="143.41116"
-    y="69.207245"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12396"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059725,1.009492)">RGC</text>
- <rect
-    x="129.00058"
-    y="80.690308"
-    fill="#7c64ff"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12398"
-    style="stroke-width:1.12888" />
- <text
-    x="143.41116"
-    y="85.011551"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12400"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059725,1.009492)">STE</text>
- <rect
-    x="129.00058"
-    y="96.644569"
-    fill="#c2374a"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12402"
-    style="stroke-width:1.12888" />
- <text
-    x="143.41116"
-    y="100.8158"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12404"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059725,1.009492)">TK</text>
- <rect
-    x="129.00058"
-    y="112.59889"
-    fill="#70bd93"
-    width="7.3626466"
-    height="7.5030832"
-    id="rect12406"
-    style="stroke-width:1.12888" />
- <text
-    x="143.41116"
-    y="116.62015"
-    font-weight="700"
-    font-size="5.64441px"
-    font-family="Helvetica"
-    id="text12408"
-    style="stroke-width:1.12888"
-    transform="scale(0.99059725,1.009492)">TKL</text>
-</g>
-</svg>
-</div>  
+instance.on('zoom', function(e) {
+  console.log('Fired when `element` is zoomed', e);
+});
 
-  </body>
+instance.on('zoomend', function(e) {
+  console.log('Fired when zoom animation ended', e);
+});
+
+instance.on('transform', function(e) {
+  // This event will be called along with events above.
+  console.log('Fired when any transformation has happened', e);
+});
+
+	</script>
+</body>
 </html>
