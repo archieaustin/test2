@@ -1,0 +1,19 @@
+.svg-container {
+    position: relative;
+    width:100%;
+   height: 100%;
+  }
+
+  .svg-top-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: visible;
+  }
+
+  .svg-top {
+    width: 100%;
+    height: 100%;
+  }
